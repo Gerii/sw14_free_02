@@ -84,6 +84,7 @@ Ext.application({
 		        	Muzic.util.Database.addEntry("Mad World", "Unknown", "music_files/01 Mad World.mp3");
 		        	Muzic.util.Database.addEntry("Seven Nation Army", "Unknown", "music_files/01 Seven Nation Army.mp3");
 		        	Muzic.util.Database.addEntry("Captain Jack", "Captain Jack", "music_files/Captain Jack - Captain Jack.mp3");
+		        	Muzic.util.Database.addEntry("Captain Jack - Second Edition", "Captain Jack", "music_files/Captain Jack - Captain Jack Second Edition.mp3");
 		        	Muzic.util.Database.addEntry("crash", "Sencha", "music_files/crash.mp3");
 		        	Muzic.util.Database.addEntry("Wonderful Life", "Seeed", "music_files/Seeed - Wonderful Life.mp3");
 		        	Muzic.util.Database.addEntry("Chandelier", "Sia", "music_files/Siva - Chandelier.aac");

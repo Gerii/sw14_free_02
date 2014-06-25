@@ -32,7 +32,10 @@ Ext.define('Muzic.util.Database', {
 		}
 		var myDb = Muzic.util.Database.getDatabase();
 		myDb.transaction(function(tx) {
-	        tx.executeSql('PRAGMA foreign_keys = ON;');
+			if (!testUI) {
+				tx.executeSql('PRAGMA foreign_keys = ON;');
+			}
+	        
 			tx.executeSql('CREATE TABLE IF NOT EXISTS artists_table(artist_id integer primary key, artist_name text unique);');
 		    tx.executeSql('CREATE TABLE IF NOT EXISTS songs_table(song_id integer primary key, artist_id integer , title text, filepath text unique, FOREIGN KEY(artist_id) REFERENCES artists_table(artist_id), UNIQUE(artist_id, title, filepath));',
 		    	[], function() {
